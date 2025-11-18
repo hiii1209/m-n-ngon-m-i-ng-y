@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #dc74d3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.intro {
+    width: 90%;                 
+    max-width: 1000px;          
+    margin: 20px auto;          
+    padding: 15px 20px;         
+    background-color: #fff7e6;  
+    border-left: 5px solid #ed53ed; 
+    border-radius: 8px;         
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 1rem;            
+    line-height: 1.6;          
+    color: #333;               
+    text-align: justify;        
+}
+
+footer {
+    background-color: #e89ae2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cột trên desktop */
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 100%; /* 1 cột trên mobile */
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        gap: 15px;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 15px); /* 2 cột trên tablet */
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 20px); /* 3 cột */
+        padding: 20px;
+    }
+}
